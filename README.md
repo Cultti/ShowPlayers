@@ -1,0 +1,2 @@
+# ShowPlayers A2 Addon
+Addon will add button into cba FlexiMenu(aka Interaction Menu) that allow players to check who is inside current vehicle in which seat. Team member names are colored with corresponding colors and other than team members are in grayish. In addition addon shows current taken seats/maximium available seats in this vehicle.
