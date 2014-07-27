@@ -11,6 +11,11 @@ Releases
 --------
 All releases can be found here: https://github.com/Cultrure/ShowPlayers/releases
 
+Requirements
+--------
+- cba_ui
+- Extended_EventHandlers
+
 Signature
 --------
 My bikey can be downloaded here: http://cultti.aukko.net/arma2/cultti.bikey
