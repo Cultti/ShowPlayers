@@ -6,6 +6,9 @@ class CfgPatches
 		weapons[] = {};
 		requiredVersion = 1.0;
 		requiredAddons[] = {"Extended_EventHandlers","cba_ui"};
+		version = 1.0.1
+		author[] = {"Cultti"};
+		authorUrl = "https://github.com/Cultrure/ShowPlayers";
 
 	};
 };
