@@ -12,5 +12,5 @@ class CfgPatches
 
 class Extended_PostInit_EventHandlers
 {
-  CULTTI_ShowPlayers_Post_Init = "CULTTI_ShowPlayers_Post_Init_Var = [] execVM ""\CULTTI_ShowPlayers\init.sqf""";
+  CULTTI_ShowPlayers_Post_Init = "CULTTI_ShowPlayers_Post_Init_Var = [] execVM ""x\cultti\addons\cultti_showplayers\init.sqf""";
 };

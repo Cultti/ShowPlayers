@@ -7,7 +7,9 @@ private
 	"_commander",
 	"_turretPaths",
 	"_turret",
-	"_txt"
+	"_txt",
+	"_fnc_GetAllTurretPaths",
+	"_fnc_ColorUnit"
 ];
 
 _target = _this select 0;
@@ -57,8 +59,8 @@ _txt = "";
 } forEach crew _target;
 */
 
-fnc_GetAllTurretPaths = compile preprocessFile "\CULTTI_ShowPlayers\fnc_GetAllTurretPaths.sqf";
-fnc_ColorUnit = compile preprocessFile "\CULTTI_ShowPlayers\fnc_ColorUnit.sqf";
+_fnc_GetAllTurretPaths = compile preprocessFile "\x\cultti\addons\cultti_showplayers\fnc_GetAllTurretPaths.sqf";
+_fnc_ColorUnit = compile preprocessFile "\x\cultti\addons\cultti_showplayers\fnc_ColorUnit.sqf";
 _temp = "";
 _max = getNumber(configFile >> "CfgVehicles" >> TypeOf _target  >> "transportSoldier");
 
@@ -74,7 +76,7 @@ _txt = "Players:";
 _cargo = crew _target;
 _driver = driver _target;
 _commander = commander _target;
-_turretPaths = _target call fnc_GetAllTurretPaths;
+_turretPaths = _target call _fnc_GetAllTurretPaths;
 
 _max = _max + count _turretPaths;
 
@@ -103,20 +105,20 @@ _current = _current + count _turret + count _cargo;
 _txt = format["%1 %2/%3", _txt, _current, _max];
 
 if( !isNull _driver ) then {
-	_txt = format["%1<br/>%2(Driver)", _txt, _driver call fnc_ColorUnit];
+	_txt = format["%1<br/>%2(Driver)", _txt, _driver call _fnc_ColorUnit];
 };
 
 if( !isNull _commander ) then {
-	_txt = format["%1<br/>%2(Commander)", _txt,  _commander call fnc_ColorUnit];
+	_txt = format["%1<br/>%2(Commander)", _txt,  _commander call _fnc_ColorUnit];
 };
 if ( !(count _turret == 0)) then {
 	{
-		_txt = format["%1<br/>%2(Turret)", _txt,  _x call fnc_ColorUnit];
+		_txt = format["%1<br/>%2(Turret)", _txt,  _x call _fnc_ColorUnit];
 	} forEach _turret;
 };
 if( !(count _cargo == 0)) then {
 	{
-		_txt = format["%1<br/>%2", _txt,  _x call fnc_ColorUnit];
+		_txt = format["%1<br/>%2", _txt,  _x call _fnc_ColorUnit];
 	} forEach _cargo;
 };
 
