@@ -7,7 +7,7 @@ _unit = _this;
 _txt = "";
 
 if(_unit in (units  player)) then {
-	_team = assignedTeam _unit;
+	_team = _unit call ST_FTHud_assignedTeam;
 	switch(_team) do {
 		case("MAIN"): {
 			_txt = format["<t color='#FFFFFF'>%1</t>", name _unit];

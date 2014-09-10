@@ -15,6 +15,7 @@ Requirements
 --------
 - cba_ui
 - Extended_EventHandlers
+- ST_FTHud
 
 Signature
 --------

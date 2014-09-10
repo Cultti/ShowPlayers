@@ -4,8 +4,8 @@ class CfgPatches
 	{
 		units[] = {};
 		weapons[] = {};
-		requiredVersion = 1.0;
-		requiredAddons[] = {"Extended_EventHandlers","cba_ui"};
+		requiredVersion = 1.6;
+		requiredAddons[] = {"Extended_EventHandlers","cba_ui","ST_FTHud"};
 		version = 1.0.2;
 		author[] = {"Cultti"};
 		authorUrl = "https://github.com/Cultrure/ShowPlayers";
