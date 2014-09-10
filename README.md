@@ -24,3 +24,6 @@ My bikey can be downloaded here: http://cultti.aukko.net/arma2/cultti.bikey
 Copyright and license
 --------
 Code and documentation copyright 2014 Timo Salola. Code and documentation is released under GNU General Public License v3.
+
+Thanks to RAB, Prodavec, Marbot, DumbkRat and SPESNAZ for fnc_GetAllTurretPaths.sqf! All credits for them.
+http://forums.bistudio.com/showthread.php?104437-Algorithm-for-Getting-Turret-Path&p=2648827&viewfull=1#post2648827
