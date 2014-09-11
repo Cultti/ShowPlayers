@@ -1,6 +1,17 @@
+/**********************************************************
+*	Author: 		Timo 'Cultti' Salola <timo@salola.fi> *
+*	License:		GNU General Public License v3         *
+*	Function: 		fnc_ColorUnit                         *
+*	Description:	Colors unit                           *
+*	Input:			unitName                              *
+*	Output:			XML formatted string                  *
+*	Requirement:	ST_FTHud                              *
+***********************************************************/
+
 private
 [
-    "_unit"
+    "_unit",
+	"_txt"
 ];
 
 _unit = _this;
